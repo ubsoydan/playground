@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task List</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <ul id="list"></ul>
+
+        <form action="" id="new-task-form">
+            <label for="task-input">New Task</label>
+            <input type="text" id="task-input" />
+            <button type="submit">Add Task</button>
+        </form>
+
+        <template id="list-item-template">
+            <li class="list-item">
+                <label class="list-item-label">
+                    <input type="checkbox" data-list-item-checkbox />
+                    <span data-list-item-text></span>
+                </label>
+                <button data-button-delete>Delete</button>
+            </li>
+        </template>
+    </body>
+</html>
