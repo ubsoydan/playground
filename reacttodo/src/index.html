@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo-OR-NotTodo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mavo/0.2.0/mavo.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <section class="todoapp">
+      <header class="header">
+        <h1>todos</h1>
+        <form>
+          <input
+            class="new-todo"
+            placeholder="What needs to be done?"
+            autofocus
+          />
+        </form>
+      </header>
+
+      <section class="main">
+        <input class="toggle-all" type="checkbox" />
+        <label for="toggle-all"> Mark all as complete </label>
+
+        <ul class="todo-list">
+          <li class="completed">
+            <div class="view">
+              <input class="toggle" type="checkbox" />
+              <label>Learn JavaScript</label>
+              <button class="destroy"></button>
+            </div>
+          </li>
+          <li>
+            <div class="view">
+              <input class="toggle" type="checkbox" />
+              <label>Learn React</label>
+              <button class="destroy"></button>
+            </div>
+          </li>
+          <li>
+            <div class="view">
+              <input class="toggle" type="checkbox" />
+              <label>Have a life!</label>
+              <button class="destroy"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <span class="todo-count">
+          <strong>2</strong>
+          items left
+        </span>
+
+        <ul class="filters">
+          <li>
+            <a href="#/" class="selected">All</a>
+          </li>
+          <li>
+            <a href="#/">Active</a>
+          </li>
+          <li>
+            <a href="#/">Completed</a>
+          </li>
+        </ul>
+
+        <button class="clear-completed">Clear completed</button>
+      </footer>
+    </section>
+
+    <footer class="info">
+      <p>Click to edit a todo</p>
+    </footer>
+    <!-- partial -->
+  </body>
+</html>
